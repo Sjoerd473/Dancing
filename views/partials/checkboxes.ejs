@@ -1,0 +1,15 @@
+
+                <form class="menu"
+                hx-post="/balli"
+            hx-swap="innerHTML"
+            hx-target=".database-table">
+                <% balli.forEach(ballo => { %>
+                    <div class="checkbox">
+                        <input checked type="checkbox" name="dance" id=<%=ballo.ballo%> value=<%=ballo.ballo%>>
+                        <label for=<%=ballo.ballo%>><%=ballo.ballo%></label>
+                    </div>
+                    <% }) %>
+                    <button
+            
+            >Populate Table</button>
+                </form>

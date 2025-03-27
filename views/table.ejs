@@ -1,0 +1,112 @@
+<% let count = 1 %>
+
+    
+    <div class="bronzo-uno livello__container">
+        <% bronzo1.forEach(passo => { %>
+           
+               
+        <div class="ballo__container">
+            <div class="ballo">
+                <p><%= count + '. ' + passo.passo %></p>
+                <% count++ %>
+                <div class="progresso__container">
+                    <div class="progresso"></div>
+                    <div class="progresso"></div>
+                    <div class="progresso"></div>
+                    <div class="progresso"></div>
+                    <div class="progresso"></div>
+                </div>
+            </div>
+            <div class="variazioni__container">
+                <ol type="A">
+                    <% variazioni.forEach(variazione => { %>
+                        <% if(variazione.passo_id === passo.passo_id){ %>
+                        <li><%= variazione.variazione %></li>
+                    <% }   }); %>
+                </ol>
+            </div>
+        </div>
+        <% }); %>
+    </div>
+    
+    <div class="bronzo-due livello__container">
+        <% bronzo2.forEach(passo => { %>
+           
+                
+        <div class="ballo__container">
+            <div class="ballo">
+                <p><%= count + '. ' + passo.passo %></p>
+                <% count++ %>
+                <div class="progresso__container">
+                    <div class="progresso"></div>
+                    <div class="progresso"></div>
+                    <div class="progresso"></div>
+                    <div class="progresso"></div>
+                    <div class="progresso"></div>
+                </div>
+            </div>
+            <div class="variazioni__container">
+                <ol type="A">
+                    <% variazioni.forEach(variazione => { %>
+                        <% if(variazione.passo_id === passo.passo_id){ %>
+                        <li><%= variazione.variazione %></li>
+                    <% }   }); %>
+                </ol>
+            </div>
+        </div>
+        <% }); %>
+    </div>
+    
+    <div class="bronzo-tre livello__container">
+        <% bronzo3.forEach(passo => { %>
+            
+        <div class="ballo__container">
+            <div class="ballo">
+                <p><%= count + '. ' + passo.passo %></p>
+                <% count++ %>
+                <div class="progresso__container">
+                    <div class="progresso"></div>
+                    <div class="progresso"></div>
+                    <div class="progresso"></div>
+                    <div class="progresso"></div>
+                    <div class="progresso"></div>
+                </div>
+            </div>
+            <div class="variazioni__container">
+                <ol type="A">
+                    <% variazioni.forEach(variazione => { %>
+                        <% if(variazione.passo_id === passo.passo_id){ %>
+                        <li><%= variazione.variazione %></li>
+                    <% }   }); %>
+                </ol>
+            </div>
+        </div>
+        <% }); %>
+    </div>
+    
+    <div class="bronzo-quattro livello__container">
+        <% bronzo4.forEach(passo => { %>
+            
+        <div class="ballo__container">
+            <div class="ballo">
+                <p><%= count + '. ' + passo.passo %></p>
+                <% count++ %>
+                <div class="progresso__container">
+                    <div class="progresso"></div>
+                    <div class="progresso"></div>
+                    <div class="progresso"></div>
+                    <div class="progresso"></div>
+                    <div class="progresso"></div>
+                </div>
+            </div>
+            <div class="variazioni__container">
+                <ol type="A">
+                    <% variazioni.forEach(variazione => { %>
+                        <% if(variazione.passo_id === passo.passo_id){ %>
+                        <li><%= variazione.variazione %></li>
+                    <% }   }); %>
+                </ol>
+            </div>
+        </div>
+                <% }); %>
+    </div>

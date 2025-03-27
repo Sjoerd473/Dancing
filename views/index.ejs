@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Dance Database</h1>
+    </header>
+    <div class="container">
+        <div>
+            <%- include ('./partials/checkboxes.ejs') %>
+           
+        </div>
+        <div class="table__container">
+            <div class="buttons">
+                <%- include('./partials/buttons.ejs') %>
+            </div>
+                <div id='dance-list' class="database-table">
+        
+        
+                </div>
+            </div>
+        
+    </div>
+
+    
+</body>
+</html>

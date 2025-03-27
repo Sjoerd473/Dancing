@@ -1,0 +1,31 @@
+<table class="table-container">
+
+<thead>
+    <th>Ballo</th>
+    <th>Passo</th>
+    <th>Variazione</th>
+    <th>Livello</th>
+</thead>
+
+<tbody>
+    <% balli.forEach(ballo => { %>
+        <tr>
+            <th><%= ballo.ballo %></th>
+            <td><%= ballo.passo %></td>
+            <% if (ballo.variazione){ %>
+               <td> <%= ballo.variazione %> </td>
+           <% } else { %>
+            <td> - </td>
+
+           <% }%>
+            <td><%= ballo.livello %></td>
+        </tr>
+
+    <%}) %>
+
+</tbody>
+</table>
+
+  
+  
+   

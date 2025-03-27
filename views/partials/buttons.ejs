@@ -1,0 +1,14 @@
+<% balli.forEach(ballo => { %>
+<form 
+hx-post="/passi"
+hx-swap="innerHTML"
+hx-target=".database-table">
+<div class="checkbox hidden">
+    <input type="text" name="dance" id=<%=ballo.ballo%> value=<%=ballo.ballo%>>
+    <label for=<%=ballo.ballo%>><%=ballo.ballo%></label>
+</div>
+    <button>
+    <%= ballo.ballo %>
+    </button>
+</form>  
+<% }); %>

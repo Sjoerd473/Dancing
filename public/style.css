@@ -1,0 +1,58 @@
+.container{
+    display:flex;
+}
+.buttons{
+    display:flex;
+}
+.menu{
+    display:flex;
+    flex-direction: column;
+}
+.hidden{
+    display:none;
+}
+.livello__container{
+    display:flex;
+    flex-direction: column;
+    border:1px solid black;
+    width: 900px;
+    margin-block-end:1em;
+}
+.ballo__container{
+    display:flex;
+    border:1px solid black;
+    
+}
+.progresso__container{
+    display:flex;
+   
+}
+.progresso{
+    background-color: red;
+    width: 16px;
+    height:16px;
+    aspect-ratio: 1;
+    border:1px solid black;
+}
+
+.variazioni__container {
+    width: 50%;
+    border:1px solid black;
+}
+.variazioni__container ol{
+    margin: 1em;
+}
+.ballo{
+   
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    border:1px solid black;
+}
+
+.bronzo-due{
+   
+}
+
+
+
